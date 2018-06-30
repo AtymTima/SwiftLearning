@@ -8,7 +8,11 @@
 
 import UIKit
 
-class MathViewController: UIViewController {
+class MathViewController: UIViewController, ViewControllerDelegate {
+    func setText(text: String) {
+            scoreOutlet.text = text
+    }
+    
     
     var myString2 = String()
     
@@ -17,7 +21,7 @@ class MathViewController: UIViewController {
     @IBAction func rulesMath(_ sender: Any)
     {
         let alert = UIAlertController(title: "The Rules",
-                                      message: "Welcome to the Math Guesser! \n \n 1) Choose the hard level \n 2) You will have several seconds to answer the following equation \n 3) Write the answer and press 'NEXT' \n \n * For each right answer you will get 1 point \n * For each wrong answer you lose 2 points \n * Game will be over when you will have no points or will make 3 mistakes \n \n ENJOY!",
+                                      message: "Welcome to the Math Guesser! \n \n 1) Choose the hard level \n 2) You will have several seconds to answer the following equation \n 3) Write the answer and press 'NEXT' \n \n * For each right answer you will get 1 point \n * For each wrong answer you lose 0.5 points \n * Game will be over when the time will be over \n \n ENJOY!",
                                       preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             switch action.style{
@@ -117,10 +121,19 @@ class MathViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "segue" {
+//
+//            let destinationViewController = segue.destination as! DestinationViewController
+//            destinationViewController.myString = hardLevel
+//            destinationViewController.delegate = self
+//
+//        }
         if segue.identifier == "segue" {
 
-            let destinationViewController = segue.destination as! DestinationViewController
-            destinationViewController.myString = hardLevel
+            if let dvc = segue.destination as? DestinationViewController {
+                dvc.text = hardLevel
+                dvc.delegate = self
+            }
 
         }
     }
