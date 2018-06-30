@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A56E8C20E621C200F1FFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56E8B20E621C200F1FFC4 /* AppDelegate.swift */; };
+		22A56E8E20E621C200F1FFC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56E8D20E621C200F1FFC4 /* ViewController.swift */; };
+		22A56E9120E621C200F1FFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A56E8F20E621C200F1FFC4 /* Main.storyboard */; };
+		22A56E9320E621C300F1FFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A56E9220E621C300F1FFC4 /* Assets.xcassets */; };
+		22A56E9620E621C300F1FFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A56E9420E621C300F1FFC4 /* LaunchScreen.storyboard */; };
+		22A56EA120E621C300F1FFC4 /* SuperMatematicianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56EA020E621C300F1FFC4 /* SuperMatematicianTests.swift */; };
+		22A56EAC20E621C300F1FFC4 /* SuperMatematicianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56EAB20E621C300F1FFC4 /* SuperMatematicianUITests.swift */; };
+		22A56EBA20E6224800F1FFC4 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56EB920E6224800F1FFC4 /* MathViewController.swift */; };
+		22A56EBC20E6604700F1FFC4 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56EBB20E6604700F1FFC4 /* DestinationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22A56E9D20E621C300F1FFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A56E8020E621C200F1FFC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A56E8720E621C200F1FFC4;
+			remoteInfo = SuperMatematician;
+		};
+		22A56EA820E621C300F1FFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A56E8020E621C200F1FFC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A56E8720E621C200F1FFC4;
+			remoteInfo = SuperMatematician;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22A56E8820E621C200F1FFC4 /* SuperMatematician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMatematician.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A56E8B20E621C200F1FFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22A56E8D20E621C200F1FFC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22A56E9020E621C200F1FFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22A56E9220E621C300F1FFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A56E9520E621C300F1FFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22A56E9720E621C300F1FFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A56E9C20E621C300F1FFC4 /* SuperMatematicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperMatematicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A56EA020E621C300F1FFC4 /* SuperMatematicianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMatematicianTests.swift; sourceTree = "<group>"; };
+		22A56EA220E621C300F1FFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A56EA720E621C300F1FFC4 /* SuperMatematicianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperMatematicianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A56EAB20E621C300F1FFC4 /* SuperMatematicianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMatematicianUITests.swift; sourceTree = "<group>"; };
+		22A56EAD20E621C300F1FFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A56EB920E6224800F1FFC4 /* MathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
+		22A56EBB20E6604700F1FFC4 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22A56E8520E621C200F1FFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A56E9920E621C300F1FFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A56EA420E621C300F1FFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A56E7F20E621C200F1FFC4 = {
+			isa = PBXGroup;
+			children = (
+				22A56E8A20E621C200F1FFC4 /* SuperMatematician */,
+				22A56E9F20E621C300F1FFC4 /* SuperMatematicianTests */,
+				22A56EAA20E621C300F1FFC4 /* SuperMatematicianUITests */,
+				22A56E8920E621C200F1FFC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22A56E8920E621C200F1FFC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22A56E8820E621C200F1FFC4 /* SuperMatematician.app */,
+				22A56E9C20E621C300F1FFC4 /* SuperMatematicianTests.xctest */,
+				22A56EA720E621C300F1FFC4 /* SuperMatematicianUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22A56E8A20E621C200F1FFC4 /* SuperMatematician */ = {
+			isa = PBXGroup;
+			children = (
+				22A56E8B20E621C200F1FFC4 /* AppDelegate.swift */,
+				22A56EBB20E6604700F1FFC4 /* DestinationViewController.swift */,
+				22A56E8D20E621C200F1FFC4 /* ViewController.swift */,
+				22A56E8F20E621C200F1FFC4 /* Main.storyboard */,
+				22A56E9220E621C300F1FFC4 /* Assets.xcassets */,
+				22A56E9420E621C300F1FFC4 /* LaunchScreen.storyboard */,
+				22A56E9720E621C300F1FFC4 /* Info.plist */,
+				22A56EB920E6224800F1FFC4 /* MathViewController.swift */,
+			);
+			path = SuperMatematician;
+			sourceTree = "<group>";
+		};
+		22A56E9F20E621C300F1FFC4 /* SuperMatematicianTests */ = {
+			isa = PBXGroup;
+			children = (
+				22A56EA020E621C300F1FFC4 /* SuperMatematicianTests.swift */,
+				22A56EA220E621C300F1FFC4 /* Info.plist */,
+			);
+			path = SuperMatematicianTests;
+			sourceTree = "<group>";
+		};
+		22A56EAA20E621C300F1FFC4 /* SuperMatematicianUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22A56EAB20E621C300F1FFC4 /* SuperMatematicianUITests.swift */,
+				22A56EAD20E621C300F1FFC4 /* Info.plist */,
+			);
+			path = SuperMatematicianUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A56E8720E621C200F1FFC4 /* SuperMatematician */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A56EB020E621C300F1FFC4 /* Build configuration list for PBXNativeTarget "SuperMatematician" */;
+			buildPhases = (
+				22A56E8420E621C200F1FFC4 /* Sources */,
+				22A56E8520E621C200F1FFC4 /* Frameworks */,
+				22A56E8620E621C200F1FFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperMatematician;
+			productName = SuperMatematician;
+			productReference = 22A56E8820E621C200F1FFC4 /* SuperMatematician.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22A56E9B20E621C300F1FFC4 /* SuperMatematicianTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A56EB320E621C300F1FFC4 /* Build configuration list for PBXNativeTarget "SuperMatematicianTests" */;
+			buildPhases = (
+				22A56E9820E621C300F1FFC4 /* Sources */,
+				22A56E9920E621C300F1FFC4 /* Frameworks */,
+				22A56E9A20E621C300F1FFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A56E9E20E621C300F1FFC4 /* PBXTargetDependency */,
+			);
+			name = SuperMatematicianTests;
+			productName = SuperMatematicianTests;
+			productReference = 22A56E9C20E621C300F1FFC4 /* SuperMatematicianTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22A56EA620E621C300F1FFC4 /* SuperMatematicianUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A56EB620E621C300F1FFC4 /* Build configuration list for PBXNativeTarget "SuperMatematicianUITests" */;
+			buildPhases = (
+				22A56EA320E621C300F1FFC4 /* Sources */,
+				22A56EA420E621C300F1FFC4 /* Frameworks */,
+				22A56EA520E621C300F1FFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A56EA920E621C300F1FFC4 /* PBXTargetDependency */,
+			);
+			name = SuperMatematicianUITests;
+			productName = SuperMatematicianUITests;
+			productReference = 22A56EA720E621C300F1FFC4 /* SuperMatematicianUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22A56E8020E621C200F1FFC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = " Тима";
+				TargetAttributes = {
+					22A56E8720E621C200F1FFC4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					22A56E9B20E621C300F1FFC4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 22A56E8720E621C200F1FFC4;
+					};
+					22A56EA620E621C300F1FFC4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 22A56E8720E621C200F1FFC4;
+					};
+				};
+			};
+			buildConfigurationList = 22A56E8320E621C200F1FFC4 /* Build configuration list for PBXProject "SuperMatematician" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22A56E7F20E621C200F1FFC4;
+			productRefGroup = 22A56E8920E621C200F1FFC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22A56E8720E621C200F1FFC4 /* SuperMatematician */,
+				22A56E9B20E621C300F1FFC4 /* SuperMatematicianTests */,
+				22A56EA620E621C300F1FFC4 /* SuperMatematicianUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22A56E8620E621C200F1FFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A56E9620E621C300F1FFC4 /* LaunchScreen.storyboard in Resources */,
+				22A56E9320E621C300F1FFC4 /* Assets.xcassets in Resources */,
+				22A56E9120E621C200F1FFC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A56E9A20E621C300F1FFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A56EA520E621C300F1FFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A56E8420E621C200F1FFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A56E8E20E621C200F1FFC4 /* ViewController.swift in Sources */,
+				22A56EBA20E6224800F1FFC4 /* MathViewController.swift in Sources */,
+				22A56E8C20E621C200F1FFC4 /* AppDelegate.swift in Sources */,
+				22A56EBC20E6604700F1FFC4 /* DestinationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A56E9820E621C300F1FFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A56EA120E621C300F1FFC4 /* SuperMatematicianTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A56EA320E621C300F1FFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A56EAC20E621C300F1FFC4 /* SuperMatematicianUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A56E9E20E621C300F1FFC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A56E8720E621C200F1FFC4 /* SuperMatematician */;
+			targetProxy = 22A56E9D20E621C300F1FFC4 /* PBXContainerItemProxy */;
+		};
+		22A56EA920E621C300F1FFC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A56E8720E621C200F1FFC4 /* SuperMatematician */;
+			targetProxy = 22A56EA820E621C300F1FFC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22A56E8F20E621C200F1FFC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A56E9020E621C200F1FFC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22A56E9420E621C300F1FFC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A56E9520E621C300F1FFC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22A56EAE20E621C300F1FFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22A56EAF20E621C300F1FFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22A56EB120E621C300F1FFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperMatematician/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SuperMatematician";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22A56EB220E621C300F1FFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperMatematician/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SuperMatematician";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22A56EB420E621C300F1FFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperMatematicianTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SuperMatematicianTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMatematician.app/SuperMatematician";
+			};
+			name = Debug;
+		};
+		22A56EB520E621C300F1FFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperMatematicianTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SuperMatematicianTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperMatematician.app/SuperMatematician";
+			};
+			name = Release;
+		};
+		22A56EB720E621C300F1FFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperMatematicianUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SuperMatematicianUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperMatematician;
+			};
+			name = Debug;
+		};
+		22A56EB820E621C300F1FFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SuperMatematicianUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.SuperMatematicianUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperMatematician;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A56E8320E621C200F1FFC4 /* Build configuration list for PBXProject "SuperMatematician" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A56EAE20E621C300F1FFC4 /* Debug */,
+				22A56EAF20E621C300F1FFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A56EB020E621C300F1FFC4 /* Build configuration list for PBXNativeTarget "SuperMatematician" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A56EB120E621C300F1FFC4 /* Debug */,
+				22A56EB220E621C300F1FFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A56EB320E621C300F1FFC4 /* Build configuration list for PBXNativeTarget "SuperMatematicianTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A56EB420E621C300F1FFC4 /* Debug */,
+				22A56EB520E621C300F1FFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A56EB620E621C300F1FFC4 /* Build configuration list for PBXNativeTarget "SuperMatematicianUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A56EB720E621C300F1FFC4 /* Debug */,
+				22A56EB820E621C300F1FFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22A56E8020E621C200F1FFC4 /* Project object */;
+}
