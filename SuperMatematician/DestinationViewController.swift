@@ -43,16 +43,23 @@ class DestinationViewController: UIViewController {
     @IBOutlet weak var redLineOutlet: UIView!
     
     
-    @IBAction func backButtonPressed(_ sender: Any)
-    {
-//        if submitButton.isEnabled == false {
-//            performSegue(withIdentifier: "segue", sender: self)
+//    @IBAction func backButtonPressed(_ sender: Any)
+//    {
+////        if submitButton.isEnabled == false {
+////            performSegue(withIdentifier: "segue", sender: self)
+//        delegate?.setText(text: "\(score) 123")
+//        print("\(score)")
+//
+//        self.navigationController?.popViewController(animated: true)
+//        performSegue(withIdentifier: "backSeg", sender: self)
+//
+//    }
+    @IBAction func backButtonPressed(_ sender: Any) {
         delegate?.setText(text: "\(score) 123")
         print("\(score)")
-
+        
         self.navigationController?.popViewController(animated: true)
-        
-        
+//        performSegue(withIdentifier: "backSeg", sender: self)
     }
     
     @IBOutlet weak var submitButton: UIButton!
@@ -220,12 +227,19 @@ class DestinationViewController: UIViewController {
 //            print(score)
 //    }
     
-    @IBAction func unwindToRootViewController(segue: UIStoryboardSegue) {
-        
-        // Use data from the view controller which initiated the unwind segue
-    }
+//    @IBAction func unwindToRootViewController(segue: UIStoryboardSegue) {
+//
+//        // Use data from the view controller which initiated the unwind segue
+//    }
+//
+//    @IBAction func unwindWithSegue(segue: UIStoryboardSegue) {
+////        let destinationViewController = segue.source as! MathViewController
+////                    destinationViewController.myString2 = "\(score)"
+////                    print(score)
+//    }
+    
+    @IBAction func unwindToBack(_ sender: UIStoryboardSegue) {
 
-    @IBAction func unwindWithSegue(segue: UIStoryboardSegue) {
     }
     
     override func didReceiveMemoryWarning() {

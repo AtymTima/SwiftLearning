@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import CoreData
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     var mess: String = ""
     var colorSet = ["red","brown","blue","cyan","orange","green","purple"]
     var randomColor: String = ""
+    var bestScore = 0.0
     
     @IBAction func rulesAlert(_ sender: Any)
     {
@@ -97,20 +99,39 @@ class ViewController: UIViewController {
                 }}))
             self.present(alert, animated: true, completion: nil)
             
+            if score < 0 {
+                score = 0
+            }
+            
             labelShowNewColor.backgroundColor = UIColor.clear
             startButtonOutlet.isEnabled = true
             startButtonOutlet.setTitle("START", for: .normal)
             labelShowNewColor.setTitle("READY?", for: .normal)
             trueOutlet.isEnabled = false
             falseOutlet.isEnabled = false
+            if score > bestScore {
+                bestScore = score
+                bestOutler.text = "BEST SCORE: \(bestScore)"
+            }
+            
+            scoreOutlet.text = "LAST SCORE: \(score)"
             score = 0
-            scoreOutlet.text = "SCORE: "
             trueOutlet.alpha = 0.5
             falseOutlet.alpha = 0.5
+            UserDefaults.standard.set(scoreOutlet.text, forKey: "lastScore")
+            UserDefaults.standard.set(bestOutler.text, forKey: "bestScore")
         }
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if let x = UserDefaults.standard.object(forKey: "lastScore") as? String{
+            scoreOutlet.text = x
+        }
+        if let y = UserDefaults.standard.object(forKey: "bestScore") as? String{
+            bestOutler.text = y
+        }
+    }
 //    var color = UIColor()
 //    var diyColor = String()
     
@@ -186,6 +207,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var scoreOutlet: UILabel!
+    @IBOutlet weak var bestOutler: UILabel!
     
     var gradient: CAGradientLayer!
     override func viewDidLoad() {
@@ -209,6 +231,38 @@ class ViewController: UIViewController {
         
         trueOutlet.alpha = 0.5
         falseOutlet.alpha = 0.5
+        
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let context = appDelegate.persistentContainer.viewContext
+//        let newRecord = NSEntityDescription.insertNewObject(forEntityName: "Records", into: context)
+//        newRecord.setValue("\(bestScore)", forKey: "bestscore")
+//        do
+//        {
+//            try context.save()
+//        }
+//        catch
+//        {
+//            // PROCESS ERROR
+//        }
+//
+//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Records")
+//        request.returnsObjectsAsFaults = false
+//
+//        do
+//        {
+//            let results = try context.fetch(request)
+//            if results.count > 0 {
+//                for result in results as! [NSManagedObject] {
+//                    if let bestcore = result.value(forKey: "bestscore") as? Double {
+//                            print(bestcore)
+//                    }
+//                }
+//            }
+//        }
+//        catch
+//        {
+//
+//        }
     }
     
     

@@ -90,6 +90,7 @@ class MathViewController: UIViewController, ViewControllerDelegate {
         hellButtonOutlet.alpha = 0.5
         mediumButtonOutlet.alpha = 0.5
     }
+    var text: String = ""
     
     var gradient: CAGradientLayer!
     override func viewDidLoad() {
@@ -111,7 +112,8 @@ class MathViewController: UIViewController, ViewControllerDelegate {
         startButtonOutlet.layer.masksToBounds = true
         startButtonOutlet.layer.cornerRadius = 20
         
-        scoreOutlet.text = "Score: \(myString2)"
+//        scoreOutlet.text = "LAST SCORE: \(text)"
+//        setText(text: myString2)
         
         startButtonOutlet.isEnabled = false
         
