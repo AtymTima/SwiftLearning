@@ -39,6 +39,7 @@ class DestinationViewController: UIViewController {
     @IBOutlet weak var bottomViewReal: UIView!
     @IBOutlet weak var equationLabel: UILabel!
     @IBOutlet weak var borderView: UIView!
+    @IBOutlet weak var exitOutlet: UIButton!
     
     @IBOutlet weak var redLineOutlet: UIView!
     
@@ -55,12 +56,14 @@ class DestinationViewController: UIViewController {
 //
 //    }
     @IBAction func backButtonPressed(_ sender: Any) {
-        delegate?.setText(text: "\(score) 123")
-        print("\(score)")
+        delegate?.setText(text: "LAST SCORE: \(score)     NAME: \(name)")
+        
         
         self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
 //        performSegue(withIdentifier: "backSeg", sender: self)
     }
+    
     
     @IBOutlet weak var submitButton: UIButton!
     @IBAction func submitButtonPressed(_ sender: Any)
@@ -138,6 +141,8 @@ class DestinationViewController: UIViewController {
         scoreLabel.alpha = 0.8
         
         runTimer()
+        exitOutlet.isEnabled = false
+        exitOutlet.alpha = 0.5
     }
     
     @objc func moveQuestionLabel() {
@@ -201,9 +206,11 @@ class DestinationViewController: UIViewController {
             alert()
             submitButton.isEnabled = false
             submitButton.alpha = 0.5
+            exitOutlet.isEnabled = true
+            exitOutlet.alpha = 1
         }
     }
-    
+    var name = ""
 //    var submitAction: UIAlertAction
     func alert(){
         let ac = UIAlertController(title: "Enter your name", message: "Your score is \(score) \n You can save it!", preferredStyle: .alert)
@@ -211,7 +218,7 @@ class DestinationViewController: UIViewController {
         
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [unowned ac] _ in
             let answer = ac.textFields![0]
-            print("\(String(describing: answer.text))")
+            self.name = answer.text!
             // do something interesting with "answer" here
         }
         
@@ -239,7 +246,7 @@ class DestinationViewController: UIViewController {
 //    }
     
     @IBAction func unwindToBack(_ sender: UIStoryboardSegue) {
-
+        print("hiiiiii")
     }
     
     override func didReceiveMemoryWarning() {
@@ -250,3 +257,5 @@ class DestinationViewController: UIViewController {
 
 
 }
+
+
