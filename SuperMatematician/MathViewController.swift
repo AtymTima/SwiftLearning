@@ -79,9 +79,12 @@ class MathViewController: UIViewController, ViewControllerDelegate {
     @IBOutlet weak var startButtonOutlet: UIButton!
     @IBAction func startButtonPressed(_ sender: Any)
     {
+        setAlphaToHalf()
         if startButtonOutlet.isEnabled == true {
             performSegue(withIdentifier: "segue", sender: self)
         }
+        hardLevel = "1"
+        startButtonOutlet.isEnabled = false
     }
     
     func setAlphaToHalf(){
@@ -112,6 +115,7 @@ class MathViewController: UIViewController, ViewControllerDelegate {
         startButtonOutlet.layer.masksToBounds = true
         startButtonOutlet.layer.cornerRadius = 20
         
+        
 //        scoreOutlet.text = "LAST SCORE: \(text)"
 //        setText(text: myString2)
         
@@ -120,6 +124,12 @@ class MathViewController: UIViewController, ViewControllerDelegate {
         setAlphaToHalf()
         // Do any additional setup after loading the view.
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        if let x = UserDefaults.standard.object(forKey: "lastResult") as? String{
+//            scoreOutlet.text = x
+//        }
+//    }
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
