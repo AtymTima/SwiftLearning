@@ -31,6 +31,7 @@ func newUser(){
     balance = 0
     name = ""
     user.cart.list = []
+    discount = 0
 }
 
 func greeting(){

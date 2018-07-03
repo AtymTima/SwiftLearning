@@ -80,9 +80,9 @@
 			children = (
 				7039A84920E22C86003010CC /* HelperFunctions */,
 				F9A13B8D1ADDD6990057A316 /* main.swift */,
-				7039A83920E22529003010CC /* User.swift */,
-				7039A84C20E23480003010CC /* Shop.swift */,
 				7039A83B20E225E4003010CC /* PaymentType.swift */,
+				7039A84C20E23480003010CC /* Shop.swift */,
+				7039A83920E22529003010CC /* User.swift */,
 				7039A84720E22AD4003010CC /* Product.swift */,
 			);
 			path = ShopListV2;
