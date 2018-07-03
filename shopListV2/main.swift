@@ -57,10 +57,9 @@ while(loop){
     case "checkout":
         user.cart.showList()
         if !user.cart.isEmpty(){
-            print("Do you want to buy it? Right 'Y' if yes")
-            
-            if getln().uppercased() == "Y" {
-                
+            print("Do you want to buy it? Right 'Y' if yes, 'N' if no")
+            let answer = getln()
+            if answer.uppercased() == "Y" || answer.uppercased() == "YES"{
                 let check = user.accept()
                 if(check.0){
                     if user.cart.list.count == 5{
@@ -95,6 +94,10 @@ while(loop){
                 } else {
                     print("Your balance isnt enought")
                 }
+            } else if answer.uppercased() == "N" || answer.uppercased() == "NO"{
+                print("You can come back at any time you want!")
+            } else {
+                print("Excuse me, I didn't understand you")
             }
         }
     case "cart":
@@ -103,16 +106,21 @@ while(loop){
         if !user.cart.isEmpty(){
             print("Choose id from 1 to \(user.cart.list.count)")
             let id = Int(getln())!
-            for index in 0..<list.count{
-                if list[index].name == user.cart.list[id-1].name{
-                    list[index].amount += 1
+            if id >= 1 && id <= user.cart.list.count {
+                for index in 0..<list.count{
+                    if list[index].name == user.cart.list[id-1].name{
+                        list[index].amount += 1
+                    }
                 }
+                user.cart.remove(id: id)
+                
+                print("Product was removed!")
+            } else {
+                print("There is no product of that ID in your cart. Check it again")
             }
-            user.cart.remove(id: id)
             
-            print("Product was removed!")
         } else {
-            print("There is no product of that ID in your cart. Check it again")
+            print("Your cart is already empty")
         }
         if user.cart.list.count == 0{
             exit = 1
