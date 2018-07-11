@@ -11,6 +11,7 @@ import Foundation
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var avaOfTheUser: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var viewWithUserData: UIView!
     @IBOutlet weak var profileTabBar: UITabBarItem!
@@ -19,7 +20,7 @@ class ProfileViewController: UIViewController {
     var chosenCity: String = "Не выбран"
     var chosenBalance: Int = 0
     var checkCell: Int = 0
-    
+    var chosenAva: UIImage?
     
 //    lazy var user = User(chosenUsername: chosenUsername, chosenBalance: chosenBalance)
 
@@ -33,6 +34,13 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         roundCornerStyle().makeRoundView(object: viewWithUserData)
         self.setNeedsStatusBarAppearanceUpdate()
+        if chosenAva != nil
+        {
+            avaOfTheUser.image = chosenAva
+        }
+        
+        let newCornerStyle = roundCornerStyle()
+        newCornerStyle.makeRoundCorners(object: avaOfTheUser)
     }
     
 

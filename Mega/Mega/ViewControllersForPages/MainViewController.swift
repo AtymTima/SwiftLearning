@@ -58,6 +58,7 @@ class ViewController: UIViewController {
             let toPayVC = forPayingVC.viewControllers![0] as! UINavigationController
             let destinationPayVC = toPayVC.topViewController as! FoodViewController
             destinationPayVC.balanceOfUser = chosenBalance!
+            destinationViewController.chosenAva = chooseAva.image
         }
     }
     

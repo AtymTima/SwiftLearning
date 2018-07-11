@@ -24,18 +24,22 @@ struct ProductFood
     let logoOfProductFood: String?
 }
 
-class ProductFood2
-{
-    let nameOfProductFood: [ShopFood]
-    let priceOfProductFood: [ShopFood]
-    let typeOfProductFood: [ShopFood]
-    let logoOfProductFood: [ShopFood]
-    
-    init(nameOfProductFood: [ShopFood], priceOfProductFood: [ShopFood], typeOfProductFood: [ShopFood], logoOfProductFood: [ShopFood])
-    {
-        self.nameOfProductFood = nameOfProductFood
-        self.priceOfProductFood = priceOfProductFood
-        self.typeOfProductFood = typeOfProductFood
-        self.logoOfProductFood = logoOfProductFood
-    }
-}
+
+
+
+
+//class ProductFood2
+//{
+//    let nameOfProductFood: [ShopFood]
+//    let priceOfProductFood: [ShopFood]
+//    let typeOfProductFood: [ShopFood]
+//    let logoOfProductFood: [ShopFood]
+//
+//    init(nameOfProductFood: [ShopFood], priceOfProductFood: [ShopFood], typeOfProductFood: [ShopFood], logoOfProductFood: [ShopFood])
+//    {
+//        self.nameOfProductFood = nameOfProductFood
+//        self.priceOfProductFood = priceOfProductFood
+//        self.typeOfProductFood = typeOfProductFood
+//        self.logoOfProductFood = logoOfProductFood
+//    }
+//}

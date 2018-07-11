@@ -15,6 +15,7 @@ import SwiftyJSON
 class BasketViewController: UIViewController {
 
     @IBOutlet weak var collectionForCard: UICollectionView!
+    
     var card = Card(){
         didSet{
             print("SET CARD IN BASKET")
@@ -28,7 +29,8 @@ class BasketViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool)
     {
-        collectionForCard.reloadData()
+        CollectingViews().reloadCollectionWithDelay(objectCollection: self.collectionForCard)
+        collectionForCard.addRefreshControlToCollectionView(object: collectionForCard)
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,13 +12,22 @@ import SwiftyJSON
 import Kingfisher
 import Foundation
 
-class FoodDetailedViewController: UIViewController
+class FoodDetailedViewController: UIViewController, FoodOrderDelegate
 {
     
     func setUp(order: ProductFood) {
         if let basketVC = tabBarController?.viewControllers![2] as? BasketViewController{
             basketVC.intoCardInsert(order: order)
         }
+        
+//        let forBasketVC = tabBarController?.viewControllers![2] as! UINavigationController
+//        if let basketVC = forBasketVC.topViewController as? BasketViewController{
+//            basketVC.intoCardInsert(order: order)
+//        }
+        
+//        let forPayingVC = segue.destination as! UITabBarController
+//        let toPayVC = forPayingVC.viewControllers![0] as! UINavigationController
+//        let destinationPayVC = toPayVC.topViewController as! FoodViewController
     }
     
     @IBOutlet weak var logoOfCompanyBanner: UIImageView!

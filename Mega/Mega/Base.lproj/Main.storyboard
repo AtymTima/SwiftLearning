@@ -372,6 +372,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Профиль" id="cyf-Bs-KUv"/>
                     <connections>
+                        <outlet property="avaOfTheUser" destination="j9p-dd-K3j" id="FBv-2o-kzx"/>
                         <outlet property="navigationBar" destination="cyf-Bs-KUv" id="n7K-UP-MTh"/>
                         <outlet property="profileTabBar" destination="SYZ-Rm-fiY" id="Fdq-iq-9Uf"/>
                         <outlet property="viewWithUserData" destination="iOz-B5-Ohp" id="RCd-Nh-hoA"/>
