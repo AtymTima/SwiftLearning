@@ -27,6 +27,7 @@ class FoodViewController: UIViewController
     var checkIfTheUserEntered: Int = 0
     var indexOfPage: Int = 0
     var headerOfCompany: [String] = []
+    var balanceOfUser: Int = 0
 
     func parseJson(){
         Alamofire.request("https://megaapi.herokuapp.com/api/food", method: .get).validate().responseJSON { response in
@@ -83,6 +84,7 @@ class FoodViewController: UIViewController
             destinationViewController.indexOfPage = indexOfPage
             destinationViewController.headerOfCompany = headerOfCompany
             destinationViewController.nameOfCompany = namesOfCompany
+            destinationViewController.balanceOfUser = balanceOfUser
         }
     }
     

@@ -7,21 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
-class User{
-    
-    var chosenUsername: String
-    var chosenBalance: Int
-//    var cart = Cart(cartList: list)
-    
-    init(chosenUsername: String, chosenBalance: Int) {
-        self.chosenUsername = chosenUsername
-        self.chosenBalance = chosenBalance
-    }
-    
-//    func accept() -> (Bool, Int) {
-//        return cart.accept(userBalance: balance)
-//    }
-    
-    
+class Card {
+    var foodCard : [ProductFood] = []
+    var clothesCard : [ProductFood] = []
+    var currentImage = UIImage()
 }

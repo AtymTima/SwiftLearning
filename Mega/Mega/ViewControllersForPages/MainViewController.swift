@@ -53,6 +53,11 @@ class ViewController: UIViewController {
                 chosenBalance = 0
             }
             destinationViewController.chosenBalance = chosenBalance!
+            
+            let forPayingVC = segue.destination as! UITabBarController
+            let toPayVC = forPayingVC.viewControllers![0] as! UINavigationController
+            let destinationPayVC = toPayVC.topViewController as! FoodViewController
+            destinationPayVC.balanceOfUser = chosenBalance!
         }
     }
     

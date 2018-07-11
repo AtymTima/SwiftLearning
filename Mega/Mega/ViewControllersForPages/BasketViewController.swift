@@ -14,12 +14,21 @@ import SwiftyJSON
 
 class BasketViewController: UIViewController {
 
-    
-    @IBOutlet weak var basketTabBar: UITabBarItem!
+    @IBOutlet weak var collectionForCard: UICollectionView!
+    var card = Card(){
+        didSet{
+            print("SET CARD IN BASKET")
+        }
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        collectionForCard.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

@@ -26,6 +26,9 @@
 		220C89D420EE2E0D0007B916 /* FoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C89D320EE2E0D0007B916 /* FoodDetailedViewController.swift */; };
 		220CE12720ED2961008CC6C7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE12620ED2961008CC6C7 /* TabBarController.swift */; };
 		220CE12920ED2EBE008CC6C7 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE12820ED2EBE008CC6C7 /* NavBarController.swift */; };
+		220CFBEE20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFBED20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift */; };
+		220CFBF020F6080C00A1AAF5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFBEF20F6080C00A1AAF5 /* PageViewController.swift */; };
+		220CFBF220F60EE100A1AAF5 /* BasketClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFBF120F60EE100A1AAF5 /* BasketClothesViewController.swift */; };
 		220D798320EF5C2A00A0AC86 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D798220EF5C2A00A0AC86 /* ProfileTableViewCell.swift */; };
 		220D798520EF704700A0AC86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D798420EF704700A0AC86 /* User.swift */; };
 		220D798720EF735800A0AC86 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D798620EF735800A0AC86 /* Shop.swift */; };
@@ -77,6 +80,9 @@
 		220C89D320EE2E0D0007B916 /* FoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailedViewController.swift; sourceTree = "<group>"; };
 		220CE12620ED2961008CC6C7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		220CE12820ED2EBE008CC6C7 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		220CFBED20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketVCCollectionViewCell.swift; sourceTree = "<group>"; };
+		220CFBEF20F6080C00A1AAF5 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		220CFBF120F60EE100A1AAF5 /* BasketClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketClothesViewController.swift; sourceTree = "<group>"; };
 		220D798220EF5C2A00A0AC86 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		220D798420EF704700A0AC86 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		220D798620EF735800A0AC86 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 				220D798220EF5C2A00A0AC86 /* ProfileTableViewCell.swift */,
 				220A520920EF42E4000A8CC1 /* ClothesDetailedVCCollectionViewCell.swift */,
 				220A5AE220EFCBB3004870DC /* ClothesScrollingCollectionViewCell.swift */,
+				220CFBED20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift */,
 			);
 			path = ViewControllersExtensions;
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 				2200C83D20ECDC25001C1778 /* FoodViewController.swift */,
 				2200C83F20ECE215001C1778 /* ClothesViewController.swift */,
 				2200C84120ECE24E001C1778 /* BasketViewController.swift */,
+				220CFBF120F60EE100A1AAF5 /* BasketClothesViewController.swift */,
 				2200C84320ECE25C001C1778 /* ProfileViewController.swift */,
 				220C89D320EE2E0D0007B916 /* FoodDetailedViewController.swift */,
 				220A520720EF429C000A8CC1 /* ClothesDetailedViewController.swift */,
@@ -179,6 +187,7 @@
 				220CE12620ED2961008CC6C7 /* TabBarController.swift */,
 				220CE12820ED2EBE008CC6C7 /* NavBarController.swift */,
 				220A520120EF20F6000A8CC1 /* ChoosingAva.swift */,
+				220CFBEF20F6080C00A1AAF5 /* PageViewController.swift */,
 			);
 			path = ViewControllersNavTab;
 			sourceTree = "<group>";
@@ -454,6 +463,7 @@
 				220D798720EF735800A0AC86 /* Shop.swift in Sources */,
 				220CE12720ED2961008CC6C7 /* TabBarController.swift in Sources */,
 				2200C84020ECE215001C1778 /* ClothesViewController.swift in Sources */,
+				220CFBF020F6080C00A1AAF5 /* PageViewController.swift in Sources */,
 				220A520420EF23A8000A8CC1 /* Product.swift in Sources */,
 				220C89D220EE24450007B916 /* GMStepper.swift in Sources */,
 				2263AC6020ECC8B0002E7CD5 /* MainViewController.swift in Sources */,
@@ -468,8 +478,10 @@
 				2200C83E20ECDC25001C1778 /* FoodViewController.swift in Sources */,
 				220D798320EF5C2A00A0AC86 /* ProfileTableViewCell.swift in Sources */,
 				220CE12920ED2EBE008CC6C7 /* NavBarController.swift in Sources */,
+				220CFBF220F60EE100A1AAF5 /* BasketClothesViewController.swift in Sources */,
 				220EABD420EDCE89001C7C51 /* FoodVCTableViewCell.swift in Sources */,
 				2200C83C20ECDB03001C1778 /* StyleAndColors.swift in Sources */,
+				220CFBEE20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift in Sources */,
 				220A520220EF20F6000A8CC1 /* ChoosingAva.swift in Sources */,
 				220C89D420EE2E0D0007B916 /* FoodDetailedViewController.swift in Sources */,
 				220D798520EF704700A0AC86 /* User.swift in Sources */,

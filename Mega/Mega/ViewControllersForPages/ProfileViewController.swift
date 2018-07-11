@@ -21,7 +21,7 @@ class ProfileViewController: UIViewController {
     var checkCell: Int = 0
     
     
-    lazy var user = User(chosenUsername: chosenUsername, chosenBalance: chosenBalance)
+//    lazy var user = User(chosenUsername: chosenUsername, chosenBalance: chosenBalance)
 
     override var preferredStatusBarStyle: UIStatusBarStyle
     {

@@ -9,21 +9,6 @@
 import Foundation
 
 
-////    func showList(){
-////        print("What type of product do you want [all | food | drink]:")
-////        switch getln(){
-////        case "food":
-////            foodListShow()
-////        case "drink":
-////            drinkListShow()
-////        case "all":
-////            allListShow()
-////        default:
-////            allListShow()
-////        }
-////
-////}
-//}
 
 struct ShopFood
 {

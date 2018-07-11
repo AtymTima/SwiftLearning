@@ -15,6 +15,12 @@ import Foundation
 class FoodDetailedViewController: UIViewController
 {
     
+    func setUp(order: ProductFood) {
+        if let basketVC = tabBarController?.viewControllers![2] as? BasketViewController{
+            basketVC.intoCardInsert(order: order)
+        }
+    }
+    
     @IBOutlet weak var logoOfCompanyBanner: UIImageView!
     @IBOutlet weak var collectionViewFoodDetailed: UICollectionView!
     @IBOutlet weak var averageCheckOfCompany: UILabel!
@@ -23,14 +29,20 @@ class FoodDetailedViewController: UIViewController
         self.dismiss(animated: true, completion: nil)
     }
     
-    var indexOfPage: Int = 0
-    var name: [String] = []
-    var logoUrl: [String] = []
-    var pricesOfProducts: [Int] = []
-    var type: [String] = []
-    var averageCheck: Int = 0
-    var headerOfCompany: [String] = []
-    var nameOfCompany: [String] = []
+            var indexOfPage: Int = 0
+            var name: [String] = []
+            var logoUrl: [String] = []
+            var pricesOfProducts: [Int] = []
+            var type: [String] = []
+            var averageCheck: Int = 0
+            var headerOfCompany: [String] = []
+            var nameOfCompany: [String] = []
+            var balanceOfUser: Int = 0
+            var successAnswer: String = "The product was successfully added to the cart!"
+            var failureAnswer: String = "The balance is not enough, return later!"
+            var numberOfChosenProduct: Int = 0
+    
+    var totalSum: Int = 0
 
     override func viewDidLoad()
     {
@@ -41,6 +53,7 @@ class FoodDetailedViewController: UIViewController
         logoOfCompanyBanner.kf.setImage(with: mainLogo)
         UINavigationBar.appearance().tintColor = UIColor.white
         self.title = "\(nameOfCompany[indexOfPage])"
+        
     }
     
     override func viewWillDisappear(_ animated: Bool)

@@ -40,7 +40,7 @@ class ClothesScrollingViewController: UIViewController {
         nameOfChosenCompany.text = nameOfCompany
         descriptionOfProduct.text = descriptionOfCompany
         nameOfProduct.text = productClothesName
-        collectionViewScrolling.changeStyleOfCollectionView(object: collectionViewScrolling)
+        
         UINavigationBar.appearance().tintColor = UIColor.white
         self.title = "\(nameOfCompany)"
     }

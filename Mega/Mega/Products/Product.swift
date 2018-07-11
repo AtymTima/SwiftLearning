@@ -16,7 +16,15 @@ struct ProductClothes
     let logoOfProductCloth: [String]
 }
 
-class ProductFood
+struct ProductFood
+{
+    let nameOfProductFood: String?
+    let priceOfProductFood: Int?
+    let typeOfProductFood: String?
+    let logoOfProductFood: String?
+}
+
+class ProductFood2
 {
     let nameOfProductFood: [ShopFood]
     let priceOfProductFood: [ShopFood]
