@@ -22,13 +22,13 @@
 		220A5AE520EFCC7F004870DC /* ClothesScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A5AE420EFCC7F004870DC /* ClothesScrollingViewController.swift */; };
 		220C89CC20EE0D350007B916 /* ClothesVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C89CB20EE0D350007B916 /* ClothesVCCollectionViewCell.swift */; };
 		220C89D020EE213B0007B916 /* FoodDetailedVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C89CF20EE213B0007B916 /* FoodDetailedVCCollectionViewCell.swift */; };
-		220C89D220EE24450007B916 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C89D120EE24450007B916 /* GMStepper.swift */; };
 		220C89D420EE2E0D0007B916 /* FoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C89D320EE2E0D0007B916 /* FoodDetailedViewController.swift */; };
 		220CE12720ED2961008CC6C7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE12620ED2961008CC6C7 /* TabBarController.swift */; };
 		220CE12920ED2EBE008CC6C7 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE12820ED2EBE008CC6C7 /* NavBarController.swift */; };
 		220CFBEE20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFBED20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift */; };
 		220CFBF020F6080C00A1AAF5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFBEF20F6080C00A1AAF5 /* PageViewController.swift */; };
 		220CFBF220F60EE100A1AAF5 /* BasketClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CFBF120F60EE100A1AAF5 /* BasketClothesViewController.swift */; };
+		220D47F620F64BCF00400D89 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D47F520F64BCF00400D89 /* GMStepper.swift */; };
 		220D798320EF5C2A00A0AC86 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D798220EF5C2A00A0AC86 /* ProfileTableViewCell.swift */; };
 		220D798520EF704700A0AC86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D798420EF704700A0AC86 /* User.swift */; };
 		220D798720EF735800A0AC86 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D798620EF735800A0AC86 /* Shop.swift */; };
@@ -76,13 +76,13 @@
 		220A5AE420EFCC7F004870DC /* ClothesScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesScrollingViewController.swift; sourceTree = "<group>"; };
 		220C89CB20EE0D350007B916 /* ClothesVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesVCCollectionViewCell.swift; sourceTree = "<group>"; };
 		220C89CF20EE213B0007B916 /* FoodDetailedVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailedVCCollectionViewCell.swift; sourceTree = "<group>"; };
-		220C89D120EE24450007B916 /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = ../../../../../Downloads/customstepper/customstepper/GMStepper.swift; sourceTree = "<group>"; };
 		220C89D320EE2E0D0007B916 /* FoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailedViewController.swift; sourceTree = "<group>"; };
 		220CE12620ED2961008CC6C7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		220CE12820ED2EBE008CC6C7 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		220CFBED20F601D300A1AAF5 /* BasketVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketVCCollectionViewCell.swift; sourceTree = "<group>"; };
 		220CFBEF20F6080C00A1AAF5 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		220CFBF120F60EE100A1AAF5 /* BasketClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketClothesViewController.swift; sourceTree = "<group>"; };
+		220D47F520F64BCF00400D89 /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = ../../../../../../Downloads/customstepper/customstepper/GMStepper.swift; sourceTree = "<group>"; };
 		220D798220EF5C2A00A0AC86 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		220D798420EF704700A0AC86 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		220D798620EF735800A0AC86 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -195,8 +195,8 @@
 		220EABF720EDD8D0001C7C51 /* StylesAndFunctions */ = {
 			isa = PBXGroup;
 			children = (
-				220C89D120EE24450007B916 /* GMStepper.swift */,
 				2200C83B20ECDB03001C1778 /* StyleAndColors.swift */,
+				220D47F520F64BCF00400D89 /* GMStepper.swift */,
 				220A51FF20EF1A5D000A8CC1 /* RepeatableFunctions.swift */,
 			);
 			path = StylesAndFunctions;
@@ -465,7 +465,6 @@
 				2200C84020ECE215001C1778 /* ClothesViewController.swift in Sources */,
 				220CFBF020F6080C00A1AAF5 /* PageViewController.swift in Sources */,
 				220A520420EF23A8000A8CC1 /* Product.swift in Sources */,
-				220C89D220EE24450007B916 /* GMStepper.swift in Sources */,
 				2263AC6020ECC8B0002E7CD5 /* MainViewController.swift in Sources */,
 				220A5AE320EFCBB3004870DC /* ClothesScrollingCollectionViewCell.swift in Sources */,
 				2263AC5E20ECC8B0002E7CD5 /* AppDelegate.swift in Sources */,
@@ -474,6 +473,7 @@
 				220A5AE520EFCC7F004870DC /* ClothesScrollingViewController.swift in Sources */,
 				220A520820EF429C000A8CC1 /* ClothesDetailedViewController.swift in Sources */,
 				220C89D020EE213B0007B916 /* FoodDetailedVCCollectionViewCell.swift in Sources */,
+				220D47F620F64BCF00400D89 /* GMStepper.swift in Sources */,
 				2200C84420ECE25C001C1778 /* ProfileViewController.swift in Sources */,
 				2200C83E20ECDC25001C1778 /* FoodViewController.swift in Sources */,
 				220D798320EF5C2A00A0AC86 /* ProfileTableViewCell.swift in Sources */,
