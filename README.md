@@ -19,4 +19,5 @@ Single App (UI):
 * Mega - is the simulator of real life shopping application which allows you to see different products from a variety of food and clothing stores, add them to your cart and buy as a result (DAY 8-10)
 
 Final project - LeagueVolunteers: https://itunes.apple.com/us/app/leaguevolunteers/id1424919016?mt=8
+
 More about it here:https://github.com/AtymTima/LVolunteersApp
